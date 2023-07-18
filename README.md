@@ -24,7 +24,7 @@ Run the code
 
 ## Documentation
 
-The project will take an file in input corresponding to the versions wich are going to be exported, each version has to be written on a single line (the file can contain duplicates and will filter useless information). After executing the code, a log folder "Output" will be created, containing the different versions of the firmwares (IOS & IOS XE) in files of 50 lines maximum. The program will also forge and open URLs in which the versions will be written so you can directly export all data without having to fill in every version by hand (you will just be asked to complete the captcha if prompted), you can edit the levels of dangerosity you want to be applied (Critical,High,Medium,Low) at the beginning of the program. 
+The project will take an file in input corresponding to the versions wich are going to be exported, each version has to be written on a single line (the file can contain duplicates and will filter useless information). After executing the code, a log folder "Output" will be created, containing the different versions of the firmwares (IOS & IOS XE) in files of 50 lines maximum. The program will also forge and open URLs in which the versions will be written so you can directly export all data without having to fill in every version by hand (you will just be asked to complete the captcha if the autosolve with F5 didn't work), you can edit the levels of dangerosity you want to be applied (Critical,High,Medium,Low) at the beginning of the program. 
 
 Firmware file example :
 

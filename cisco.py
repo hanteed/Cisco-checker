@@ -1,5 +1,7 @@
 import os
 import webbrowser
+import time
+import pyautogui
 
 # List of IOS & IOS XE prefixes :
 # IOS Software : 15/12
@@ -107,8 +109,12 @@ def main():
     IOSXEVERSIONS = ciscoexport(iosxe,"IOSXE")
 
     # Levels of dangerousness : Critical,High,Medium,Low
-    webbrowser.open(urlforge("IOS",IOSVERSIONS,dangerlevel1),"\n")
-    webbrowser.open(urlforge("IOSXE",IOSXEVERSIONS,dangerlevel2))
+    webbrowser.open(urlforge("IOS",IOSVERSIONS,"critical,high"),"\n")
+    time.sleep(5)
+    pyautogui.hotkey('f5')
+    webbrowser.open(urlforge("IOSXE",IOSXEVERSIONS,"critical,high"))
+    time.sleep(5)
+    pyautogui.hotkey('f5')
 
 
 main()
